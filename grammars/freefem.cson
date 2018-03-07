@@ -1,23 +1,26 @@
 'scopeName': 'source.freefem'
 'name': 'Freefem++'
-'fileTypes': ['edp']
+'fileTypes': [
+	'edp'
+	'idp'
+]
 
 'patterns': [
 	{
 		'begin': '//'
 		'end': '\\n'
-		'name': 'comment.line.double-dash.freefem'
+		'name': 'comment.line.double-slash.freefem'
 	}
 	{
-		'match': '\\b(break|catch|continue|else|end|for|if|include|load|return|throw|try|while)\\b'
+		'match': '\\b(break|catch|continue|else|for|if|include|load|return|throw|try|while)\\b'
 		'name': 'keyword.control.freefem'
 	}
 	{
-		'match': '\\b(bool|border|complex|fespace|func|ifstream|int|macro|matrix|mesh|ofstream|problem|real|solve|string|varf)\\b'
+		'match': '\\b(bool|border|complex|fespace|func|ifstream|int|macro|matrix|mesh|mesh3|ofstream|problem|real|solve|string|varf)\\b'
 		'name': 'storage.type.freefem'
 	}
 	{
-		'match': '\\b(abs|acos|adaptmesh|asin|atan|buildmesh|convect|cos|cosh|cotan|cotanh|dx|dy|exp|int1d|int2d|intalledge|jump|log|log10|max|min|movemesh23|on|plot|savemesh|sin|sinh|sqrt|square|tan|tanh)\\('
+		'match': '\\b(abs|acos|acosh|adaptmesh|adj|AffineCg|AffineGMRES|asin|asinh|assert|atan|atan2|atanh|BFGS|buildlayers|buildmesh|ceil|change|checkmovemesh|clock|cmaes|conj|convect|cos|cosh|cube|dfft|diffnp|diffpos|dist|dx|dy|dz|dxx|dxy|dxz|dyy|dyz|dzz|EigenValue|emptymesh|erf|exec|exit|exp|fdim|floor|fmax|fmin|fmod|imag|int1d|int2d|intalledge|interpolate|invdiffnp|invdiffpos|isoline|j0|j1|jn|jump|LinearCG|LinearGMRES|log|log10|max|mean|medit|min|movemesh|movemesh23|NLCG|on|plot|polar|pow|projection|readmesh|readmesh3|round|savemesh|savesol|set|sin|sinh|sort|splitmesh|sqrt|square|tan|tanh|tetg|tetgconvexhull|tetgreconstruction|tetgtransfo|trunc|y0|y1|yn|flush|getline|seekg|tellg)\\('
 		'captures':
 			'1':
 				'name': 'support.function.freefem'
@@ -27,7 +30,7 @@
 		'name': 'constant.numeric.freefem'
 	}
 	{
-		'match': '\\b(cin|cout|endl|false|i|pi|true|x|y|z)\\b'
+		'match': '\\b(cin|cout|endl|false|i|pi|true|x|y|z|CG|Cholesky|Crout|GMRES|LU|N|P|sparsesolver|verbosity|version|qf1pE|qf2pE|qf3pE|qf5pE|qf1pElump|qf1pT|qf2pT|qf5pT|qf1pTlump|qf2pT4P1|qf7pT|qf9pT|qfV1|qfV2|qfV5|qfV1lump|append|binary)\\b'
 		'name': 'support.constant.freefem'
 	}
 	{
