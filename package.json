@@ -8,10 +8,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/JeremyHeleine/language-freefem.git"
+    "url": "https://github.com/FreeFem/language-freefem.git"
   },
   "bugs": {
-    "url": "https://github.com/JeremyHeleine/language-freefem/issues"
+    "url": "https://github.com/FreeFem/language-freefem/issues"
   },
-  "license": "MIT"
+  "license": "GPLv3"
 }
