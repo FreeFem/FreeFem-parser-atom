@@ -8,10 +8,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/FreeFem/language-freefem.git"
+    "url": "https://github.com/FreeFem/FreeFem-parser-atom.git"
   },
   "bugs": {
-    "url": "https://github.com/FreeFem/language-freefem/issues"
+    "url": "https://github.com/FreeFem/FreeFem-parser-atom/issues"
   },
   "license": "GPLv3"
 }
