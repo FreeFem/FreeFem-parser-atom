@@ -1,5 +1,5 @@
 {
-  "name": "language-freefem",
+  "name": "language-freefem-official",
   "version": "0.1.1",
   "description": "Freefem++ language support in Atom",
   "engines": {
