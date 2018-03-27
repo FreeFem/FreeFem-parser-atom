@@ -16,11 +16,11 @@
 		'name': 'keyword.control.freefem'
 	}
 	{
-		'match': '\\b(bool|border|complex|fespace|func|ifstream|int|macro|matrix|mesh|mesh3|ofstream|problem|real|solve|string|varf)\\b'
+		'match': '\\b(bool|border|complex|dmatrix|fespace|func|ifstream|int|macro|matrix|mesh|mesh3|ofstream|problem|real|solve|string|varf)\\b'
 		'name': 'storage.type.freefem'
 	}
 	{
-		'match': '\\b(abs|acos|acosh|adaptmesh|adj|AffineCg|AffineGMRES|asin|asinh|assert|atan|atan2|atanh|BFGS|buildlayers|buildmesh|ceil|change|checkmovemesh|clock|cmaes|conj|convect|cos|cosh|cube|dfft|diffnp|diffpos|dist|dx|dy|dz|dxx|dxy|dxz|dyy|dyz|dzz|EigenValue|emptymesh|erf|exec|exit|exp|fdim|floor|fmax|fmin|fmod|imag|int1d|int2d|int3d|intalledge|interpolate|invdiffnp|invdiffpos|isoline|j0|j1|jn|jump|LinearCG|LinearGMRES|log|log10|max|mean|medit|min|movemesh|movemesh23|NLCG|on|plot|polar|pow|projection|readmesh|readmesh3|round|savemesh|savesol|set|sin|sinh|sort|splitmesh|sqrt|square|tan|tanh|tetg|tetgconvexhull|tetgreconstruction|tetgtransfo|trunc|y0|y1|yn|flush|getline|seekg|tellg)\\('
+		'match': '\\b(abs|acos|acosh|adaptmesh|adj|AffineCG|AffineGMRES|asin|asinh|assert|atan|atan2|atanh|BFGS|buildlayers|buildmesh|ceil|complexEigenValue|change|checkmovemesh|clock|cmaes|conj|convect|cos|cosh|cube|dfft|diffnp|diffpos|dimKrylov|dist|dx|dxx|dxy|dxz|dy|dyx|dyy|dyz|dz|dzx|dzy|dzz|EigenValue|emptymesh|erf|erfc|exec|exit|exp|fdim|floor|fmax|fmin|fmod|freeyams|getline|imag|int1d|int2d|int3d|intalledges|interpolate|invdiffnp|invdiffpos|isoline|j0|j1|jn|jump|LinearCG|LinearGMRES|log|log10|max|mean|medit|min|mmg3d|movemesh|movemesh23|mshmet|NLCG|on|plot|polar|pow|projection|readmesh|readmesh3|round|savemesh|savesol|set|seekg|sin|sinh|sort|splitmesh|sqrt|square|system|tan|tanh|tellg|tetg|tetgconvexhull|tetgreconstruction|tetgtransfo|triangulate|trunc|y0|y1|yn)\\('
 		'captures':
 			'1':
 				'name': 'support.function.freefem'
@@ -30,7 +30,7 @@
 		'name': 'constant.numeric.freefem'
 	}
 	{
-		'match': '\\b(cin|cout|endl|false|i|pi|true|x|y|z|CG|Cholesky|Crout|GMRES|LU|N|P|sparsesolver|verbosity|version|qf1pE|qf2pE|qf3pE|qf5pE|qf1pElump|qf1pT|qf2pT|qf5pT|qf1pTlump|qf2pT4P1|qf7pT|qf9pT|qfV1|qfV2|qfV5|qfV1lump|append|binary|P0|P03d|P0Edge|P1|P13d|P1dc|P1b|P1b3d|P1bl|P1bl3d|P1nc|P2|P23d|P2b|P2dc|RT0|RT03d|RT0Ortho|Edge03d|P3|P3dc|P4|P4dc|P1Edge|P2Edge|P3Edge|P4Edge|P5Edge|P2morley|HCT|P2BR|RT1|RT1Ortho|BDM1|BDM1Ortho|Edge13D|Edge23D|FEQF|hmin|hmax|err|errg|nbvx|nbsmooth|nbjacoby|ratio|omega|iso|abserror|cutoff|inquire|splitpbedge|maxsubdiv|rescaling|keepbackvertices|isMetric|power|thetamax|splitin2|metric|nomeshgeneration|preiodic|precon|nbiter|eps|veps|stop|fixeborder|label|region|flabel|fregion|flags|qfe|qforder|inside|op|U2VC|closse|smoothing|beginend|file|solver|cmm|coef|fill|value|aspectratio|bb|nbiso|nbarrow|viso|varrow|bw|grey|hsv|boundary|dim|prev|WindowIndex|dataname|order|bin)\\b'
+		'match': '\\b(BDM1|BDM1Ortho|Edge03d|Edge13D|Edge23D|FEQF|HCT|P0|P03d|P0Edge|P1|P13d|P1b|P1b3d|P1bl|P1bl3d|P1dc|P1Edge|P1nc|P2|P23d|P2b|P2BR|P2dc|P2Edge|P2Morley|P3|P3dc|P3Edge|P4|P4dc|P4Edge|P5Edge|RT0|RT03d|RT0Ortho|RT1|RT1Ortho|ENDIFMACRO|include|IFMACRO|load|adj|append|area|be|binary|bordermeasure|CG|Cholesky|cin|cout|Crout|diag|endl|flush|GMRES|hTriangle|label|lenEdge|LU|m|measure|n|N|nbe|nt|nuTriangle|nv|P|pi|qf1pE|qf1pElump|qf1pT|qf1pTlump|qfV1|qfV1lump|qf2pE|qf2pT|qf2pT4P1|qfV2|qf3pE|qf5pE|qf5pT|qfV5|qf7pT|qf9pT|region|sparsesolver|whoinElement|verbosity|version|x|y|z|A|A1|abserror|absolute|aniso|aspectratio|B|B1|bb|beginend|boundary|bw|close|cmm|coef|cutoff|datafilename|dataname|dim|displacement|doptions|dparams|eps|err|errg|facemerge|facetcl|factorize|file|fill|fixedborder|flabel|flags|fregion|gradation|grey|hmax|hmin|holelist|hsv|init|inquire|inside|IsMetric|iso|ivalue|keepbackvertices|label|labeldown|labelmid|labelup|levelset|loptions|lparams|maxit|maxsubdiv|meditff|mem|memory|metric|mode|nbarrow|nbiso|nbiter|nbjacoby|nboffacetcl|nbofholes|nbofregions|nbregul|nbsmooth|nbvx|ncv|nev|nomeshgeneration|normalization|omega|op|option|order|orientation|periodic|power|precon|prev|ps|ptmerge|qfe|qforder|ratio|rawvector|reftet|region|regionlist|rescaling|ridgeangle|save|sigma|sizeofvolume|smoothing|solver|sparams|split|splitin2|splitpbedge|stop|strategy|sym|t|tgv|thetamax|tol|tolpivot|tolpivotsym|transfo|U2Vc|value|varrow|vector|veps|viso|wait|width|WindowIndex|which|zbound)\\b'
 		'name': 'support.constant.freefem'
 	}
 	{
