@@ -1,6 +1,6 @@
 {
   "name": "language-freefem-official",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Freefem++ language support in Atom",
   "engines": {
     "atom": "*"
