@@ -12,6 +12,17 @@
 		'name': 'comment.line.double-slash.freefem'
 	}
 	{
+		begin: '/\\*'
+		beginCaptures:
+			'0':
+				name: 'punctuation.definition.comment.begin.freefem'
+		end: '\\*/'
+		endCaptures:
+			'0':
+				name: 'punctuation.definition.comment.end.freefem'
+		name: 'comment.block.freefem'
+	}
+	{
 		'match': '\\b(break|catch|continue|else|for|if|include|load|return|try|while)\\b'
 		'name': 'keyword.control.freefem'
 	}
